@@ -2,7 +2,7 @@ const librosGenerales = [
     {
         nombre: "el psicoanalista",
         autor:"John Katzenbach",
-    }, {
+    },{
         nombre: "la biblia",
         autor: "la iglesia",
     }
@@ -21,19 +21,19 @@ const librosInfatiles = [
 const libros = librosGenerales.concat(librosInfatiles);
 console.log(libros);
 
-const nombreLibro = prompt('ingrese el nombre de su libro')
+const nombreLibro = prompt('ingrese el nombre de su libro');
 
 for (let i = 0; i < libros.length; i++ ) {
     if (nombreLibro === libros[i].nombre) {
-        alert("Has elegido "+ libros[i].nombre)
+        alert("Has elegido "+ libros[i].nombre);
     }
 }
 
-const nombreAutor = prompt('ingrese el autor')
+const nombreAutor = prompt('ingrese el autor');
 
 for (let i = 0; i < libros.length; i++ ) {
     if (nombreAutor === libros[i].autor) {
-        alert("Has elegido "+ libros[i].autor)
+        alert("Has elegido "+ libros[i].autor);
     }
 }
 
