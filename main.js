@@ -1,18 +1,25 @@
-const libros = [
+const librosGenerales = [
     {
-        nombre: "el principito",
-        autor: "antoine de saint-exupéry"
-    }, {
         nombre: "el psicoanalista",
         autor:"John Katzenbach",
     }, {
         nombre: "la biblia",
         autor: "la iglesia",
-    }, {
+    }
+];
+
+const librosInfatiles = [
+    {
         nombre: "los tres chanchitos",
         autor: "Los hermanos Grimm",
-    }
-]
+    },{
+        nombre: "el principito",
+        autor: "antoine de saint-exupéry"
+    }, 
+];
+
+const libros = librosGenerales.concat(librosInfatiles);
+console.log(libros);
 
 const nombreLibro = prompt('ingrese el nombre de su libro')
 
@@ -30,6 +37,7 @@ for (let i = 0; i < libros.length; i++ ) {
     }
 }
 
+console.log("En nuestra base de datos podrás encontrar: ", libros.length + " libros");
  
 function pedirPaginas() {
       return parseInt(prompt('Ingrese la cantidad de páginas'));
